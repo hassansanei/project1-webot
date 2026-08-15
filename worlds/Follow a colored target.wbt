@@ -1,0 +1,88 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/solids/protos/SolidBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/BrushedAluminium.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Parquetry.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.34355684592125246 -0.20342420813288073 0.9168354733354025 4.136305392029751
+  position 0.6011981081153748 1.0114518517104092 1.201908111193726
+}
+TexturedBackground {
+  luminosity 12
+  skyColor [
+    1 1 1
+  ]
+}
+TexturedBackgroundLight {
+  texture "noon_sunny_empty"
+  luminosity 5
+  castShadows FALSE
+}
+RectangleArena {
+  floorTileSize 0 0
+  floorAppearance Parquetry {
+    type "light strip"
+  }
+  wallThickness 0
+  wallHeight 0
+  wallAppearance BrushedAluminium {
+    IBLStrength 0
+  }
+}
+E-puck {
+  translation 2.0172968262751762e-05 -1.4641330267390455e-05 -7.743967077446408e-05
+  rotation -1.126034093018399e-05 5.139782283879365e-06 0.9999999999233938 2.3048772223819705
+  name "robot"
+  controller "flowredbox"
+}
+SolidBox {
+  translation -0.190679 -0.176236 0.05
+  size 0.1 0.1 0.1
+  appearance PBRAppearance {
+    baseColor 0 0 1
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation 0.362763 -0.182122 0.05
+  name "box(1)"
+  size 0.1 0.1 0.1
+  appearance PBRAppearance {
+    baseColor 0 1 0
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation 0.209791 0.328283 0.05
+  name "box(2)"
+  size 0.1 0.1 0.1
+  appearance PBRAppearance {
+    baseColor 1 0 0
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
